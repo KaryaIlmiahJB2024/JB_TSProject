@@ -1,4 +1,10 @@
-background-color: #ebebf2;
-opacity: 0.8;
-background-image: radial-gradient(#444cf7 0.9500000000000001px, #ebebf2 0.9500000000000001px);
-background-size: 19px 19px;
+body {
+  --dot-bg: black;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+}
